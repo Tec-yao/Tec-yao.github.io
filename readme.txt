@@ -5,3 +5,5 @@ Git tracks changes of files.
 creating a branch quick AND simple
  
 git git git
+
+a bug fixed
