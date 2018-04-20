@@ -299,29 +299,14 @@
 
       
         
-          
-            <h2 id="Mysql登录"><a href="#Mysql登录" class="headerlink" title="Mysql登录"></a>Mysql登录</h2><p> -u用户名<br> -p密码<br> -P端口号<br> -h服务器名字</p>
-<p> 退出：exit quit \q</p>
-<h2 id="修改提示符"><a href="#修改提示符" class="headerlink" title="修改提示符"></a>修改提示符</h2><p> 在登录时 使用–prompt+修改的提示符<br> 在登录完后 使用prompt+修改提示符<br> 二者选其一<br>修改提示符的意义在于更清晰的知道在操作的数据库是哪一个</p>
-<h2 id="MySQL语言规范"><a href="#MySQL语言规范" class="headerlink" title="MySQL语言规范"></a>MySQL语言规范</h2><p><em>关键词与函数名称全部大写
-</em>数据库名称，表名称，字段名称必须全部小写<br>*SQL语句必须以分号为结尾</p>
-<h2 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h2><h3 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE &#123;DATABASE | SCHEMA&#125; [IF NOT EXTISTS] db_name [DEFAULT] CHARACTER SET [=] charset_name</span><br></pre></td></tr></table></figure>
-<p>注释：{}表示必填，选其中一个。[]选填<br>{}中表示选数据库还是表。<br>IF NOT EXTISTS，在不知道是否存在该表时使用<br>CHARACTER SET,表示在使用什么格式指令创建数据库 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW CREATE DATABASE dbname;  //显示创建数据库时所使用的指令</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW DATABASES; //显示所有数据库</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW WARNING; //显示警告</span><br></pre></td></tr></table></figure>
-<h3 id="修改数据库"><a href="#修改数据库" class="headerlink" title="修改数据库"></a>修改数据库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER &#123;DATABASE | SCHEMA&#125; [db_name] [DEFAULT] CHARACTER SET [=] charset_name;</span><br></pre></td></tr></table></figure>
-<p>例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER DATABASE t2 CHARACTER SET = utf8;</span><br></pre></td></tr></table></figure></p>
-<h3 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP &#123;DATABASE | SCHEMA&#125; [IF EXISTS] db_name</span><br></pre></td></tr></table></figure>
-<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h3><p>TINYINT 0到255<br>SMALLINT 0到65535<br>MEDIUMINT 0到16777215<br>INT 0到4294967295<br>BIGINT 0到1844674073709551615</p>
-<p>以上有符号对半折</p>
-<h3 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h3><p>FLOAT[(M,D)]<br>DOUBLE[(M,D)]</p>
-<p>注：其中M代表数字总位数，D代表后面的小数点</p>
-<h3 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h3><p>CHAR(M)<br>VARCHAR(M)<br>IINTTEXT<br>TEXT<br>MEDIUMTEXT<br>LONGIEXT<br>ENUM(‘value1’,’value2’,…)  枚举<br>SET(‘values1’,’values2’,…) 集合<br>M:表示可以指定大小</p>
-<h2 id="创建数据表"><a href="#创建数据表" class="headerlink" title="创建数据表"></a>创建数据表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE [IF NOT EXISTS] table_name(</span><br><span class="line">   clumn_name data_type,</span><br><span class="line">   ...</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<p>注：clumn_name是列名，变量名。data_type 是变量类型<br>最后一个列名不用加逗号</p>
-
-          
+          <p>简单的MySQL操作<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/18/mysql/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
