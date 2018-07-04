@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="爬虫基础爬虫基本原理爬虫简单来说就是获取网页并提取和保存信息的自动化程序 Session 和 Cookieshttp作为无状态协议，没有对事务处理没有记忆能力的，所以需要Session 和 Cookies 来保持http的连接状态，Session在服务端，用来保存用户的会话信息，Cookies在客户端，在浏览器访问网页时会自动附带上给服务器，服务器通过识别Cookies并鉴定出是哪一个用户，然后">
+<meta name="description" content="爬虫学习笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python spider">
 <meta property="og:url" content="http://yoursite.com/2018/06/04/python-spider/index.html">
 <meta property="og:site_name" content="Yao&#39;s hexo">
-<meta property="og:description" content="爬虫基础爬虫基本原理爬虫简单来说就是获取网页并提取和保存信息的自动化程序 Session 和 Cookieshttp作为无状态协议，没有对事务处理没有记忆能力的，所以需要Session 和 Cookies 来保持http的连接状态，Session在服务端，用来保存用户的会话信息，Cookies在客户端，在浏览器访问网页时会自动附带上给服务器，服务器通过识别Cookies并鉴定出是哪一个用户，然后">
+<meta property="og:description" content="爬虫学习笔记">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-10T12:50:19.232Z">
+<meta property="og:updated_time" content="2018-07-04T09:16:16.067Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python spider">
-<meta name="twitter:description" content="爬虫基础爬虫基本原理爬虫简单来说就是获取网页并提取和保存信息的自动化程序 Session 和 Cookieshttp作为无状态协议，没有对事务处理没有记忆能力的，所以需要Session 和 Cookies 来保持http的连接状态，Session在服务端，用来保存用户的会话信息，Cookies在客户端，在浏览器访问网页时会自动附带上给服务器，服务器通过识别Cookies并鉴定出是哪一个用户，然后">
+<meta name="twitter:description" content="爬虫学习笔记">
 
 
 
@@ -299,7 +299,8 @@
       
 
       
-        <a id="more"></a>
+        <p>爬虫学习笔记</p>
+<a id="more"></a>
 <h3 id="爬虫基础"><a href="#爬虫基础" class="headerlink" title="爬虫基础"></a>爬虫基础</h3><h4 id="爬虫基本原理"><a href="#爬虫基本原理" class="headerlink" title="爬虫基本原理"></a>爬虫基本原理</h4><p>爬虫简单来说就是获取网页并提取和保存信息的自动化程序</p>
 <h4 id="Session-和-Cookies"><a href="#Session-和-Cookies" class="headerlink" title="Session 和 Cookies"></a>Session 和 Cookies</h4><p>http作为无状态协议，没有对事务处理没有记忆能力的，所以需要<br>Session 和 Cookies 来保持http的连接状态，Session在服务端，用来保存<br>用户的会话信息，Cookies在客户端，在浏览器访问网页时会自动附带上给服务器，服务器通过识别Cookies并鉴定出是哪一个用户，然后判断用户的登录状态</p>
 <h5 id="会话维持"><a href="#会话维持" class="headerlink" title="会话维持"></a>会话维持</h5><p>当客户端第一次请求服务器是，服务器会返回一和Headers中带哟Set-Cookie字段的Response 给客户端，用以标记是哪一个用户，客户端浏览次会把Cookies放到Request Headers一起提交给服务器，Cookies 携带了 Session ID 信息，服务器检查该 Cookies 即可找到对应的 Session 是什么，然后再判断 Session 来以此来辨认用户状态。</p>
@@ -836,6 +837,7 @@ ab+，以二进制格式打开一个文件用于追加。如果该文件已存�
 <h3 id="Ajax数据爬取"><a href="#Ajax数据爬取" class="headerlink" title="Ajax数据爬取"></a>Ajax数据爬取</h3><h4 id="什么Ajax"><a href="#什么Ajax" class="headerlink" title="什么Ajax"></a>什么Ajax</h4><p>Ajax 全称Asynchronous JavaScript and XML<br>即异步的JavaScript和XML</p>
 <p>Ajax 不是一门编程语言，而是利用js在保证页面不更新，页面链接不改的情况下和服务器交换并更新部分网页的技术</p>
 <h5 id="基本原理-1"><a href="#基本原理-1" class="headerlink" title="基本原理"></a>基本原理</h5><p>可以简单分为三步<br>发送请求<br>解析内容<br>渲染网页</p>
+<p>发送请求，</p>
 
       
     </div>
